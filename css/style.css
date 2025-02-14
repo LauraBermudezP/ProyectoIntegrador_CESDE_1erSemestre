@@ -1,0 +1,1391 @@
+:root {
+--negro: #000;
+--blanco: #fff;
+--blanco-violeta: #faebff;
+--nav-hover-violeta: #9f7baa;
+--violeta-botones: #631f77;
+--violeta-texto: #730694;
+--violeta-texto-dos: #3b064b;
+--violeta-sombras: #1f0825c4;
+--violeta-muy-oscuro: #200a27;
+--gris-claro: #818181;
+--gris-oscuro: #303030;
+--fuente-uno: "Outfit", sans-serif;
+--fuente-dos: "Pirata One", system-ui;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button:hover, footer .artista__biografia--footer svg:hover, main .blog__articulo h2:hover, main .nuestros__servicios--contenedor a:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+header {
+    width: 100%;
+    height: auto;
+}
+header .header__difuminado {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(290.8deg, #0000001c -15%, #370946 100%);
+}
+header .perfoarte__logo img {
+    position: absolute;
+    left: 45%;
+    top: 5%;
+    width: 140px;
+    height: auto;
+    border: 3px solid var(--negro);
+    border-radius: 100px;
+}
+header .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 160px;
+    padding: 20px 0;
+    box-shadow: 0px -9px 18px rgba(0, 0, 0, 0.623);
+    background-color: var(--negro);
+}
+header .header__menu nav {
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+header .header__menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+header .header__menu a {
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: var(--blanco-violeta);
+}
+header .header__menu a:hover {
+    border-bottom: 4px solid var(--violeta-texto-dos);
+}
+body {
+    width: 100%;
+    height: auto;
+    background-color: var(--negro);
+}
+main .boton__whatsapp {
+    position: fixed;
+    width: 60px;
+    height: auto;
+    bottom: 20px;
+    right: 20px;
+}
+main .boton__whatsapp svg {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+}
+main .boton__whatsapp svg:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+footer .terminos__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 60px 0;
+    color: var(--gris-claro);
+    background-color: var(--negro);
+}
+footer .terminos__footer nav, footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+footer .terminos__footer ul a, footer .link__desarrolladores a {
+    text-decoration: none;
+    padding-bottom: 6px;
+    color: var(--violeta-texto);
+}
+footer .terminos__footer ul a:hover, footer .link__desarrolladores:hover {
+    border-bottom: 2px solid var(--blanco-violeta);
+}
+footer .derechos__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 40px 0;
+    font-size: 1.4rem;
+    box-shadow: 0px -9px 18px rgba(0, 0, 0, 0.623);
+    color: var(--gris-claro);
+    background-color: var(--negro);
+}
+                                                                        /* INDEX */
+main .seccion__bienvenida {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px 0;
+    gap: 400px;
+    border: 2px;
+    background-image: url('../assets/imagenes/index/bienvenida_fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+main .seccion__bienvenida .bienvenida__foto {
+    width: 25%;
+    height: auto;
+}
+main .seccion__bienvenida .bienvenida__foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 5px #000000;
+}
+main .seccion__bienvenida .bienvenida__texto {
+    width: 30%;
+    height: auto;
+    font-size: 5.5rem;
+    font-family: var(--fuente-dos);
+    padding: 20px;
+    line-height: 7rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 10px #000000;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .nuestros__servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 70px;
+    background-color: var(--negro);
+}
+main .nuestros__servicios--titulo h2, main .blog__seccion1--titulo h2{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--blanco);
+    text-shadow: 2px 3px 1.5px var(--violeta-texto);
+}
+main .nuestros__servicios--contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    width: 100%;
+    height: auto;
+    color: var(--blanco);
+}
+main .nuestros__servicios--contenedor img {
+    width: 500px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 4px;
+}
+main .nuestros__servicios--contenedor h2 {
+    font-size: 2.9rem;
+    font-family: var(--fuente-dos);
+    text-shadow: 2px 3px 1.5px var(--gris-claro);
+}
+main .nuestros__servicios--tattoos, main .nuestros__servicios--piercings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+}
+main .nuestros__servicios--texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 200px;
+}
+main .nuestros__servicios--texto h2 {
+    font-family: var(--fuente-dos);
+    font-size: 4.3rem;
+}
+main .nuestros__servicios--texto p {
+    margin: 20px 30px;
+    font-size: 1.9rem;
+}
+main .nuestros__servicios--contenedor a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 35px;
+    border: 2px solid var(--blanco);
+    border-radius: 4px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .nuestros__servicios--contenedor a:hover {
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco-violeta);
+    color: var(--negro);
+}
+main .index__asesorias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 630px;
+    padding: 15px 20px;
+    color: var(--negro);
+    background-color: var(--blanco-violeta);
+}
+main .index__asesorias .asesorias__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 500px;
+    color: var(--negro);
+}
+main .index__asesorias .asesorias__texto h2 {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+main .index__asesorias .asesorias__texto p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+}
+main .index__asesorias .asesorias__texto button {
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .asesorias__valoracion {
+    color: var(--gris-oscuro);
+}
+main .index__asesorias .asesorias__img {
+    width: 35%;
+    height: 585px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px #303030d3;
+    background-image: url('../assets/imagenes/index/foto_asesoria.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .index__footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 370px;
+    padding: 60px 20px;
+    box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.541);
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+footer .footer__contactanos, .footer__encuentranos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 220px;
+}
+footer .perfoarte__logo--footer img {
+    width: 200px;
+    height: auto;
+    margin-top: 80px;
+    border-radius: 100px;
+}
+footer h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+footer .footer__contactanos p, footer .footer__encuentranos p {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 4.5rem;
+}
+footer .footer__encuentranos span {
+    width: 10px;
+    height: auto;
+    padding: 10px;
+    margin-right: 10px;
+    background-image: url(../assets/iconos/icono_ubicacion.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+footer .index__footer button {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--blanco);
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 5px;
+    margin: 10px 0;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .estilos__typ--titulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--negro);
+}
+main .estilos__typ--titulo h3 {
+    color: var(--blanco);
+    text-shadow: 3px 3px 1.5px var(--violeta-texto);
+    font-size: 4.5rem;
+}
+main .estilo__typ--seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 25px 0;
+    background-color: var(--blanco-violeta);
+}
+main .carrucel__contenedor h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: var(--fuente-uno);
+    text-align: center;
+    padding: 20px;
+    margin: 15px 0;
+    text-shadow: 1px 2px 1px var(--gris-claro);
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+main .carrucel__contenedor {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--blanco-violeta);
+}
+main .estilos__contacto--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    background-color: var(--blanco-violeta);
+}
+main .estilos__contacto--link button {
+    width: 25%;
+    height: auto;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 9px;
+    background-color: #116430;
+}
+main .controlador__estilos {
+    width: 40px;
+    height: auto;
+    position: fixed;
+    bottom: 174px;
+    right: 20px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+}
+main .controlador__estilos .controlador__estilos--seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+}
+main .controlador__estilos a {
+    width: 19px;
+    height: 19px;
+    text-decoration: none;
+    border-radius: 100px;
+    color: var(--violeta-botones);
+    background-color: var(--violeta-botones);
+}
+                                                                        /* ARTISTAS */
+.seccion__artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    color: var(--blanco);
+}
+main .nuestros__artistas--contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+}
+main .nuestros__artistas--poster {
+    width: 380px;
+    height: 390px;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main #fondo__poster1 {
+    background-image: url('../assets/imagenes/artistas/artista_1/artista_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #fondo__poster2 {
+    background-image: url('../assets/imagenes/artistas/artista_2/artista_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #fondo__poster3 {
+    background-image: url('../assets/imagenes/artistas/artista_3/artista_3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #fondo__poster4 {
+    background-image: url('../assets/imagenes/artistas/artista_4/artista_4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .nuestros__artistas--contenedor .poster__texto {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 290px;
+    font-size: 1.3rem;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+main .nuestros__artistas--contenedor .poster__texto h2 {
+    padding-top: 20px;
+    font-weight: 600;
+}
+main .nuestros__artistas--contenedor .poster__texto p {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gris-claro);
+}
+main .nuestros__artistas--contenedor .poster__texto button {
+    width: 140px;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blanco);
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+    border: 2px solid var(--violeta-muy-oscuro);
+    background: var(--violeta-botones);
+}
+main .trabajacon__nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 80px 0;
+}
+main .trabajacon__nosotros button {
+    width: 380px;
+    height: 100%;
+    padding: 5px 0;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+    border: 2px solid var(--violeta-muy-oscuro);
+    color: var(--blanco);
+    background: var(--violeta-botones);
+}
+main .trabajacon__nosotros button:hover {
+    border: 2px solid var(--negro);
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+main .artista__presentacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: var(--blanco-violeta);
+}
+main .artista__presentacion .nombre__artista {
+    width: 35%;
+    height: auto;
+    padding: 5px;
+}
+main .artista__presentacion .nombre__artista h1 {
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--negro);
+    text-shadow: 2px 3px 1.5px var(--violeta-texto);
+}
+main .artista__presentacion #especialidad__artista {
+    width: 100%;
+    height: auto;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 1.5px var(--violeta-sombras);
+    font-family: var(--fuente-dos);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--negro);
+    color: var(--violeta-texto-dos);
+}
+main .artista__presentacion #perfoarte__project {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--negro);
+    text-shadow: 2px 2px 1.5px rgba(0, 0, 0, 0.692);
+}
+main .artista__presentacion .foto__artista, .artista__presentacion .sara__acevedo--img, .alejandro__rivas--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+}
+main .artista__presentacion .foto__artista img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main .artista__presentacion .sara__acevedo--img img {
+    width: 85%;
+    height: 95%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main .artista__presentacion .alejandro__rivas--img img {
+    width: 100%;
+    height: 95%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main .artista__biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--blanco-violeta);
+}
+main .artista__biografia p {
+    width: 80%;
+    height: auto;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+    padding: 7px 0 40px 0;
+    border-bottom: 1px solid var(--negro);
+}
+main .artista__trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--blanco-violeta);
+}
+main .artista__trabajos .introduccion__trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+main .artista__trabajos .introduccion__trabajos h3 {
+    width: 50%;
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--negro);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.603);
+}
+main .artista__trabajos .introduccion__trabajos h1 {
+    width: 75%;
+    height: auto;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--negro);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+main .artista__trabajos .artista__portafolio--contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(3, 550px);
+    place-content: center;
+    gap: 8px;
+    padding: 5px;
+    width: 95%;
+    height: auto;
+}
+main .artista__portafolio--contenedor .artista__portafolio--img, .estilos__typ--contenedor .e_t__contenedor--celda {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+main .artista__portafolio--contenedor .artista__portafolio--img img, .estilos__typ--contenedor .e_t__contenedor--celda img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all 500ms ease;
+}
+main .artista__portafolio--contenedor .artista__portafolio--img img:hover, .estilos__typ--contenedor .e_t__contenedor--celda img:hover {
+    transform: scale(1.2);
+    cursor: crosshair;
+}
+footer .artista__biografia--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    background-color: var(--blanco-violeta);
+}
+footer .artista__biografia--footer svg {
+    width: 60px;
+    height: auto;
+    padding: 4px;
+}
+footer .artista__biografia--footer h2 {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+footer .artista__biografia--logo img {
+    width: 160px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 100px;
+}
+footer .agendar__artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    color: var(--negro);
+    background-color: var(--blanco-violeta);
+}
+footer .agendar__artista h2 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 2.5rem;
+    color: var(--negro);
+}
+footer .agendar__artista button {
+    width: 25%;
+    height: auto;
+    padding: 7px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    box-shadow: 1px 1px 10px 2px #303030d3;
+    background-color: var(--negro);
+}
+footer .agendar__artista button a {
+    color: var(--violeta-texto);
+}
+                                                                          /* BLOG */
+main .blog__seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: var(--negro);
+}
+main .blog__seccion1 .blogseccion1__articulos--contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 350px);
+    place-content: center;
+    width: 85%;
+    height: auto;
+    padding: 10px 0 50px 0;
+    margin-top: 30px;
+    gap: 25px;
+    border-bottom: 1px solid var(--gris-oscuro);
+}
+main .blogseccion1__articulos--contenedor .blog__articulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main .blogseccion1__articulos--contenedor .blog__articulo a {
+    margin-bottom: 8px;
+}
+main .blogseccion1__articulos--contenedor .blog__articulo h2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 5px;
+    color: var(--blanco);
+    border: 2px solid #35193d;
+    background-color: var(--violeta-sombras);
+}
+main #blog__articulo1 {
+    background-image: url('../assets/imagenes/blog/blog_bioseguridad.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #blog__articulo2 {
+    background-image: url('../assets/imagenes/blog/blog_consejostattoo.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #blog__articulo3 {
+    background-image: url('../assets/imagenes/blog/blog_cuidadostattoo.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #blog__articulo4 {
+    background-image: url('../assets/imagenes/blog/consejos_perfoimg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #blog__articulo5 {
+    background-image: url('../assets/imagenes/blog/blog_perforacionesdolor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main #blog__articulo6 {
+    background-image: url('../assets/imagenes/blog/blog_materialjoyas.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .blog__articulo--titulo {
+    width: 50%;
+    height: auto;
+    padding: 25px;
+    margin: 10px 60px;
+}
+main .blog__articulo--titulo h1{
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--blanco);
+    font-family: var(--fuente-dos);
+    text-shadow: 2px 3px 1.5px var(--violeta-texto);
+}
+main .blog__articulo--titulo h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--gris-claro);
+    padding-top: 20px;
+}
+main .blog__articulo--contenido .articulo__titulo {
+    width: 50%;
+    height: auto;
+    margin: 0 0 10px 78px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blanco);
+}
+main .articulo__contenido, .articulo__intro--texto {
+    width: 50%;
+    height: auto;
+    margin: 0 0 20px 80px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: var(--blanco);
+}
+main #articulo__cuidados--link {
+    font-size: 1.7rem;
+    color: var(--gris-claro);
+}
+main #articulo__cuidados--link a {
+    font-weight: 500;
+    margin-right: 5px;
+    color: var(--violeta-texto);
+}
+main .articulo__fecha h2 {
+    width: 30%;
+    margin-left: 85px;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: var(--gris-claro);
+}
+main .articulo__img, main .articulo__img figure {
+    position: absolute;
+    right: 45px;
+    top: 265px;
+    width: 390px;
+    height: auto;
+}
+main .articulo__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+footer .blog__footer--logo, .blog__footer--logo figure {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 6px;
+}
+footer .blog__footer--logo img {
+    width: 200px;
+    height: 100%;
+    border-radius: 100px;
+}
+                                                                       /* CUENTA */
+main .inicio__sesion, main .registros, main .trabajacon__nosotros--seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 7px;
+    box-shadow: 0px -6px 12px rgb(20, 3, 34);
+    background-image: url('../assets/imagenes/cuenta/loginregist_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .inicio__sesion--formulario, main .registros__formulario, main .trabajacon__nosotros--formulario, main .trabajacon__nosotros--formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 30px 50px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 20px 3px var(--negro);
+    color: var(--blanco);
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+}
+main .inicio__sesion--formulario h1, .registros__formulario h1, .trabajacon__nosotros--formulario h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 2px 3px 1.5px var(--negro);
+    color: var(--blanco);
+}
+.registros__formulario input, .trabajacon__nosotros--formulario input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;
+    color: var(--blanco);
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px 15px;
+}
+.inicio__sesion--formulario label, .trabajacon__nosotros--formulario label, .registros__formulario label {
+    width: 500px;
+    height: 40px;
+    color: var(--blanco);
+    font-size: 1.9rem;
+    font-weight: 700;
+    padding: 7px 0 7px 10px;
+}
+.inicio__sesion--formulario input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;
+    color: var(--blanco);
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+}
+.inicio__sesion--formulario input::placeholder, .registros__formulario input::placeholder, .trabajacon__nosotros--formulario input::placeholder {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--blanco);
+}
+.inicio__sesion--formulario button {
+    width: 130px;
+    height: 35px;
+    border: none;
+    margin: 0 200px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--negro);
+    font-family: var(--fuente-uno);
+    color: var(--gris-oscuro);
+    background: var(--blanco);
+}
+main .registrarse__enviar--botones {
+    justify-self: center;
+    width: 130px;
+    height: 35px;
+    border: none;
+    font-size: 1.6rem;
+    margin: 10px 0 0 190px;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--negro);
+    font-family: var(--fuente-uno);
+    color: var(--gris-oscuro);
+    background: var(--blanco);
+}
+.inicio__sesion--formulario .in__recuperar--contraseña {
+    width: 100%;
+    height: auto;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px 0;
+    padding-top: 10px;
+    color: var(--blanco);
+    text-decoration: underline;
+}
+.inicio__sesion--formulario .in__recuperar--contraseña a, main .estilos__contacto--link button a {
+    color: var(--blanco);
+}
+.inicio__sesion--formulario .pregunta__registro {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 10px;
+    color: var(--blanco);
+}
+.inicio__sesion--formulario .pregunta__registro a {
+    margin-left: 5px;
+    font-weight: 700;
+    color: var(--blanco);
+    text-decoration: underline;
+}
+                                                                          /* NOSOTROS */
+main .sobre__nosotros {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    background-color: var(--negro);
+}
+main .sobre__nosotros--texto {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin: 20px 70px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(32, 32, 32, 0.37);
+    border-radius: 7px;
+}
+main .sobre__nosotros--titulo {
+    width: 100%;
+    height: auto;
+}
+main .sobre__nosotros--titulo h2 {
+    font-size: 4rem;
+    color: var(--violeta-texto);
+    text-shadow: 2px 3px 1.5px var(--violeta-sombras);
+}
+main .sobre__nosotros--titulo h1 {
+    font-size: 4.5rem;
+    color: var(--blanco-violeta);
+    text-shadow: 2px 3px 1.5px var(--violeta-texto);
+}
+main .sobre__nosotros--texto p {
+    font-size: 1.7rem;
+    margin-top: 15px;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--blanco);
+}
+main .sobre__nosotros--img img {
+    position: relative;
+    width: 80%;
+    height: auto;
+    top: 35px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px var(--violeta-sombras);
+}
+main .nosotros__conocemas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+main .nosotros__conocemas h2 {
+    width: 100%;
+    height: auto;
+    font-size: 3rem;
+    text-align: center;
+    margin: 17px 0;
+    color: var(--blanco);
+}
+main .nosotros__redes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+main .nosotros__redes span {
+    width: 63px;
+    height: auto;
+    border-radius: 33px;
+    background-color: var(--violeta-texto);
+}
+main .nosotros__redes span:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: var(--gris-claro);
+}
+main .nosotros__redes svg {
+    width: 65px;
+    height: 60px;
+    padding: 5px;
+}
+footer .link__desarrolladores {
+    text-align: center;
+    width: 20%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 15px 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: var(--negro);
+}
+                                                                          /* TÉRMINOS & CONDICIONES */
+main .terminos__bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66%;
+    height: 300px;
+    margin: 30px auto;
+    background-image: url('../assets/imagenes/terminos_condicionesymas/terminos_fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .terminos__bienvenida h1 {
+    font-size: 5.2rem;
+    font-weight: bold;
+    color: var(--blanco);
+    text-shadow: 3px 3px 1px #000000;
+}
+main .terminos__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 10px 30px 10px;
+    border-bottom: 4px solid var(--gris-claro);
+    line-height: 2.5rem;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .terminos__texto h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 7px;
+}
+main .terminos__texto h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 7px;
+}
+main .terminos__texto p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 5px;
+}
+                                                                            /* DESARROLLADORES*/
+main .desarrolladores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    color: var(--blanco);
+    background-color: var(--negro);
+}
+main .desarrollador1, .desarrollador2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+}
+main .desarrolladores figure {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+main .desarrolladores img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    object-fit: cover;
+}
+main .desarrolladores h3 {
+    padding: 15px 0;
+    color: var(--gris-claro);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+main .desarrolladores h2 {
+    color: var(--blanco);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+main .desarrolladores p {
+    width: 450px;
+    height: 350px;
+    margin: 15px;
+    color: var(--blanco);
+    font-size: 1.7rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+    text-align: center;
+}
+main .desarrolladores button {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid var(--violeta-sombras);
+    color: var(--negro);
+    background: var(--blanco-violeta);
+}
+                                                                            /* TRABAJA CON NOSOTROS */
+.trabajacon__nosotros--formulario textarea {
+    resize: none;
+    width: 97%;
+    height: 100px;
+    padding: 10px;
+    margin: 8px 9px;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 5px;
+}
+.trabajacon__nosotros--formulario label {
+    display: flex;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 3px;
+    font-size: 1.6rem;
+}
+.trabajacon__nosotros--formulario .cliente__cv--input {
+    width: 100%;
+    height: auto;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 10px;
+    outline: none;
+    color: var(--blanco);
+    background-color: transparent;
+}
+                                                                              /* BOOTSTRAP */
+                                      /* Controlador sesiones de estilos T&P */
+.d-flex {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--blanco-violeta);
+}
+.mb-4 {
+    margin: 0 !important;
+}
+.justify-content-center {
+    gap: 8px;
+}
+.d-flex .btn {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--violeta-texto-dos);
+    border: 2px solid var(--violeta-sombras);
+    border-radius: 5px;
+}
+.d-flex .btn:hover {
+    color: var(--blanco);
+    border: 2px solid var(--violeta-sombras);
+    background-color: var(--violeta-sombras);
+}
+                                      /* Contenido carrucel */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 1px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px 2px #00000069;
+    background-color: var(--blanco);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.mb-5 {
+    margin: 0 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+ width: 30px;
+ height: 30px;
+ background-color: rgba(0, 0, 0, 0.253);
+}
+                                      /* Alerta registros */
+.alert-warning {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--blanco);
+    border: 1px solid var(--nav-hover-violeta);
+    background-color: #c033b99d;
+    z-index: 10;
+}
+.alert-warning strong {
+    color: var(--violeta-sombras);
+    font-weight: bolder;
+    margin: 5px;
+    text-decoration: underline;
+}
+.alert-dismissible .btn-close {
+    padding: 5px;
+}
